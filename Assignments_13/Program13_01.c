@@ -59,6 +59,7 @@ int main()
     printf("Enter number of elements : \n");
     scanf("%d", &iSize);
 
+    // Allocate dynamic memory
     ptr = (int *) malloc(iSize * sizeof(int));
 
     printf("Enter the elements : \n");
@@ -68,9 +69,10 @@ int main()
         scanf("%d", &ptr[iCnt]);
     }
 
-    iRet = Difference(ptr, iSize);
+    iRet = Difference(ptr, iSize);        // Function call
 
     printf("Result is : %d\n", iRet);
 
     return 0;
+
 }
