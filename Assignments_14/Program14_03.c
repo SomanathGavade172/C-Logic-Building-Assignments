@@ -65,6 +65,7 @@ int main()
     printf("Enter number of elements : \n");
     scanf("%d", &iLength);
 
+    // Allocate Dynamic mempry.
     ptr = (int *) malloc(iLength * sizeof(int));
 
     if(ptr == NULL)
@@ -80,7 +81,7 @@ int main()
         scanf("%d", &ptr[iCnt]);
     }
 
-    bRet = CountEven(ptr, iLength);     
+    bRet = CountEven(ptr, iLength);     // Function Call.
 
     if(bRet == TRUE)
     {
@@ -90,8 +91,10 @@ int main()
     {
         printf("11 is Absent\n");
     }
-        
+
+    // Deallocate the memory.
     free(ptr);
 
     return 0;
+
 }
