@@ -58,6 +58,7 @@ int main()
     printf("Enter number of elements : \n");
     scanf("%d", &iLength);
 
+    // Allocate dynamic memory.
     ptr = (int *) malloc(iLength * sizeof(int));
 
     if(ptr == NULL)
@@ -73,12 +74,13 @@ int main()
         scanf("%d", &ptr[iCnt]);
     }
 
-    iRet = CountEven(ptr, iLength);     
+    iRet = CountEven(ptr, iLength);     // Function Call
 
     printf("Frequency of Difference is : %d", iRet);
 
-    
+    // Deallocate the memory.
     free(ptr);
 
     return 0;
+
 }
