@@ -58,6 +58,7 @@ int main()
     printf("Enter number of elements : \n");
     scanf("%d", &iLength);
 
+    // Allocate dynamic memory
     ptr = (int *) malloc(iLength * sizeof(int));
 
     if(ptr == NULL)
@@ -73,11 +74,13 @@ int main()
         scanf("%d", &ptr[iCnt]);
     }
 
-    iRet = Frequency(ptr, iLength);     
+    iRet = Frequency(ptr, iLength);     // Function Call.
 
     printf("%d\n", iRet);
-        
+
+    // Deallocate the memory
     free(ptr);
 
     return 0;
+
 }
