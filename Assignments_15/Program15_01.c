@@ -70,6 +70,7 @@ int main()
     printf("Enter number of elements : \n");
     scanf("%d", &iLength);
 
+    // Allocate dynamic memory.
     ptr = (int *) malloc(iLength * sizeof(int));
 
     if(ptr == NULL)
@@ -88,7 +89,7 @@ int main()
     printf("Enter Number you want to search : \n");
     scanf("%d", &iValue);
 
-    bRet = Check(ptr, iLength, iValue);
+    bRet = Check(ptr, iLength, iValue);    //  Function Call.
 
     if(bRet == TRUE)
     {
@@ -100,4 +101,5 @@ int main()
     }
 
     return 0;
+
 }
