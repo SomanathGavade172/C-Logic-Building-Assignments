@@ -100,6 +100,10 @@ int main()
         printf("FALSE\n");
     }
 
+    // Deallocate the memory.
+    free(ptr)
+        
     return 0;
 
 }
+
