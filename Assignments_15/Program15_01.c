@@ -101,9 +101,10 @@ int main()
     }
 
     // Deallocate the memory.
-    free(ptr)
+    free(ptr);
         
     return 0;
 
 }
+
 
