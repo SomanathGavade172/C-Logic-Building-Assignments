@@ -67,7 +67,14 @@ int main()
     printf("Enter number of elements : \n");
     scanf("%d", &iLength);
 
+    // Allocate Dynamic memory.
     ptr = (int *) malloc(iLength * sizeof(int));
+
+    if(ptr == NULL)
+    {
+        printf("Unable to allocate memory");
+        return -1;
+    }
 
     printf("Enter %d elements : \n", iLength);
 
@@ -79,9 +86,13 @@ int main()
     printf("Enter a number you want to search : \n");
     scanf("%d", &iValue);
 
-    iRet = LastOcc(ptr, iLength, iValue);
+    iRet = LastOcc(ptr, iLength, iValue);    // Function call.
 
-    printf("Find at index : %d\n", iRet);
+    printf("Index is : %d", iRet);
+
+    // Deallocate the memory.
+    free(p);
 
     return 0;
+
 }
