@@ -80,6 +80,7 @@ int main()
 
     printf("Enter %d elements : \n", iLength);
 
+    // Accept numbers from the user.
     for(iCnt = 0; iCnt < iLength; iCnt++)
     {
         scanf("%d", &ptr[iCnt]);
@@ -91,4 +92,5 @@ int main()
     free(ptr);
 
     return 0;
+
 }
