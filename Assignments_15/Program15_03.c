@@ -88,7 +88,14 @@ int main()
 
     iRet = LastOcc(ptr, iLength, iValue);    // Function call.
 
-    printf("Index is : %d", iRet);
+    if(iRet == -1)
+    {
+        printf("Number Not found\n");
+    }
+    else
+    {
+        printf("Find at index : %d\n", iRet);
+    } 
 
     // Deallocate the memory.
     free(p);
@@ -96,3 +103,4 @@ int main()
     return 0;
 
 }
+
