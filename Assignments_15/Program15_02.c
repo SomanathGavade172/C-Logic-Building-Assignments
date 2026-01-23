@@ -87,6 +87,10 @@ int main()
         printf("First occurrence of number is : %d", iRet);
     }    
 
+    // Deallocate the memory
+    free(ptr);
+
     return 0;
 
 }
+
