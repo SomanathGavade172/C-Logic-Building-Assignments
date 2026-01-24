@@ -70,10 +70,10 @@ int main()
         return -1;
     }
 
-    
+    // Allocate dynamic memory.
     ptr = (int *) malloc(iLength * sizeof(int));
 
-   
+   // Check allocate memory failure.
     if(ptr == NULL)
     {
         printf("Unable to allocate the memory\n");
@@ -87,12 +87,13 @@ int main()
         scanf("%d", &ptr[iCnt]);
     }
 
-    iRet = Difference(ptr, iLength);       
+    iRet = Difference(ptr, iLength);      // Function Call. 
 
     printf("Difference Number is : %d\n", iRet);
 
-   
+   // Deallocate the memory.
     free(ptr);
 
     return 0;
+
 }
