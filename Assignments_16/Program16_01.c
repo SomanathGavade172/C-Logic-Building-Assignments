@@ -51,6 +51,7 @@ int main()
         return -1;
     }
 
+    // Allocate dynamic memory.
     ptr = (int *) malloc(iLength * sizeof(int));
 
     if(ptr == NULL)
@@ -66,11 +67,13 @@ int main()
         scanf("%d", &ptr[iCnt]);
     }
 
-    iRet = Maximum(ptr, iLength);
+    iRet = Maximum(ptr, iLength);        // Function Call.
 
     printf("Maximum Number is : %d\n", iRet);
 
+    // Deallocate the memory.
     free(ptr);
 
     return 0;
+
 }
