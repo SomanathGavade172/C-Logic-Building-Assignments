@@ -31,6 +31,7 @@ int Minimum(int Arr[], int isize)
 
     for(iCnt = 0; iCnt < isize; iCnt++)
     {
+        // Check Minimum element.
         if(Arr[iCnt] < iMin)
         {
             iMin = Arr[iCnt];
@@ -90,3 +91,4 @@ int main()
     return 0;
 
 }
+
