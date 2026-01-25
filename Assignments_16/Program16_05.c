@@ -63,30 +63,36 @@ int main()
     printf("Enter number of elements : \n");
     scanf("%d", &iLength);
 
+    // Check array size.
     if(iLength <= 0)
     {
         printf("Invalid number of elements\n");
         return -1;
     }
 
+    // Allocate dynamic memory.
     ptr = (int *) malloc(iLength * sizeof(int));
 
     printf("Enter %d elements : \n", iLength);
 
+    // Accept numbers from the user.
     for(iCnt = 0; iCnt < iLength; iCnt++)
     {
         scanf("%d", &ptr[iCnt]);
     }
 
+    // Check memory allocation failure.
     if(ptr == NULL)
     {
         printf("Unable to allocate memory\n");
         return -1;
     }
 
-    Digit(ptr, iLength);
+    Digit(ptr, iLength);        //  Function Call.
 
+    // Deallocate the memory.
     free(ptr);
 
     return 0;
+
 }
