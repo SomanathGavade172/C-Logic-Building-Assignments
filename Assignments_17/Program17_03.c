@@ -20,7 +20,7 @@
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
+//  Function Definition.
 void Display(int iNo)
 {
     int iCnt = 0;
@@ -46,7 +46,8 @@ int main()
     printf("Enter a number : ");
     scanf("%d", &iValue);
 
-    Display(iValue);
+    Display(iValue);        //  Function Call.
     
     return 0;
 }
+
