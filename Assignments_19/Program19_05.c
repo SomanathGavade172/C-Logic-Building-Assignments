@@ -42,6 +42,7 @@ int main()
 {   
     int iValue = 0;
 
+    // Accept number from the user.
     printf("Enter number : \n");
     scanf("%d", &iValue);
 
@@ -49,3 +50,4 @@ int main()
 
     return 0;
 }
+
