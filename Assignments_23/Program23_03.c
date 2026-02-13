@@ -30,8 +30,10 @@ void Pattern(int iRow, int iCol)
 {
     int i = 0, j = 0;
 
+    // Outer loop
     for(i = 1; i <= iRow; i++)
     {
+        // Inner Loop
         for(j = 1; j <= iCol; j++)
         {
             if(i == j)
@@ -69,3 +71,4 @@ int main()
 
     return 0;
 }
+
