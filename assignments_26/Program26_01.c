@@ -17,6 +17,7 @@
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// Function Definition
 void DisplayASCII()
 {
     int iCnt = 0;
@@ -29,6 +30,7 @@ void DisplayASCII()
     {
         ch = iCnt;
 
+        // Check the printable characters
         if(ch >= 32 && ch <= 126)   // Printable ASCII range
         {
             printf("%c\t", ch);
@@ -53,7 +55,8 @@ void DisplayASCII()
 
 int main()
 {
-    DisplayASCII();
+    DisplayASCII();        // Function Call
     
     return 0;
 }
+
