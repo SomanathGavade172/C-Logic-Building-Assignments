@@ -28,12 +28,14 @@
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// Function Deffination
 void Display(char Ch)
 {
     int iCnt = 0;
 
     if(Ch >= 'A' && Ch <= 'Z')
     {
+        // Print characters from Ch to 'Z'.
         for(iCnt = Ch; iCnt <= 'Z'; iCnt++)
         {
             printf("%c\t", iCnt);
@@ -41,6 +43,7 @@ void Display(char Ch)
     }
     else if(Ch >= 'a' && Ch <= 'z')
     {
+        // Print characters from Ch to 'a' in reverse order.
         for(iCnt = Ch; iCnt >= 'a'; iCnt--)
         {
             printf("%c\t", iCnt);
@@ -68,7 +71,8 @@ int main()
     printf("Enter a Character : \n");
     scanf("%c", &CValue);
 
-    Display(CValue);
+    Display(CValue);        // Function Call.
     
     return 0;
 }
+
