@@ -18,10 +18,12 @@
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// Function Definition
 int Difference(char *str)
 {
     int iCountCapital = 0, iCountSmall = 0;
 
+    // Check string is empty
     if(str == NULL)
     {
         printf("Invalid Input\n");
@@ -59,9 +61,10 @@ int main()
     printf("Enter a String : \n");
     scanf("%[^\n]", Arr);
 
-    iRet = Difference(Arr);
+    iRet = Difference(Arr);        // Function Call
 
     printf("Difference between Small and Capital Characters is : %d\n", iRet);
 
     return 0;
 }
+
