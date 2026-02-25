@@ -13,8 +13,10 @@
 
 #include<stdio.h>
 
+// User defined data type
 typedef int BOOL;
 
+// Micro defined
 #define TRUE 1
 #define FALSE 0
 
@@ -29,8 +31,10 @@ typedef int BOOL;
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+    // Function definition
 BOOL ChkVowels(char *str)
 {
+    // check string is empty
     if(str == NULL)
     {
         printf("Invalid Input\n");
@@ -65,7 +69,7 @@ int main()
     printf("Enter a String : \n");
     scanf(" %[^\n]", Arr);
 
-    bRet = ChkVowels(Arr);
+    bRet = ChkVowels(Arr);        // Function Call
 
     if(bRet == TRUE)
     {
@@ -78,3 +82,4 @@ int main()
 
     return 0;
 }
+
