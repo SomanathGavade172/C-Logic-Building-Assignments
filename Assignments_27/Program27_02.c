@@ -18,10 +18,12 @@
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// Function Definition
 int CountSmall(char *str)
 {
     int iCount = 0;
 
+    // check string is empty
     if(str == NULL)
     {
         printf("Invalid Input\n");
@@ -55,9 +57,10 @@ int main()
     printf("Enter a String : \n");
     scanf("%[^\n]", Arr);
 
-    iRet = CountSmall(Arr);
+    iRet = CountSmall(Arr);        // Function Call
 
     printf("Number of Small Characters are : %d\n", iRet);
 
     return 0;
 }
+
