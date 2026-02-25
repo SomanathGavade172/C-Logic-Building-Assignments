@@ -18,10 +18,12 @@
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// Function Definition
 int CountCapital(char *str)
 {
     int iCount = 0;
 
+    // check string is Empty
     if(str == NULL)
     {
         printf("Invalid Input\n");
@@ -55,9 +57,10 @@ int main()
     printf("Enter a String : \n");
     scanf("%[^\n]", Arr);
 
-    iRet = CountCapital(Arr);
+    iRet = CountCapital(Arr);    // Function Call
 
     printf("Number of Capital Characters are : %d\n", iRet);
 
     return 0;
 }
+
