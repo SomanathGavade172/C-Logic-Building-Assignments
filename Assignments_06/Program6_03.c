@@ -1,0 +1,68 @@
+/* 
+    3.Write a program to find factorial of given number.
+
+    Input  : 5
+    Output : 120 (5 * 4 * 3 * 2 * 1)
+
+    Input  :-5
+    Output : 120 (5 * 4 * 3 * 2 * 1)
+
+    Input  : 4
+    Output : 24 (4 * 3 * 2 * 1)
+
+*/
+
+#include<stdio.h>
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name   :   Factorial
+//  Description     :   Calculates and returns the factorial of a given number.
+//  Input           :   Integer
+//  Output          :   Integer(Factorial value).
+//  Author          :   Gavade Somanath Vilas
+//  Date            :   06/01/2026
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//  Function Definition
+int Factorial(int iNo)
+{
+    int icnt = 0;
+    int iMulti = 1;
+
+    //  Updator
+    if(iNo < 0)
+    {
+        iNo = -(iNo);
+    }
+
+    for(icnt = 1; icnt <= iNo; icnt++)
+    {
+        iMulti = iMulti * icnt;
+    }
+
+    return iMulti;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Application Name    :   Factorial of a Number
+//  Description         :   This application accepts one integer from the user and displays its factorial.
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0;
+    int iRet = 0;
+
+    printf("Enter a Number : \n");
+    scanf("%d", &iValue);
+
+    iRet = Factorial(iValue);       //  Function call.
+
+    printf("Factorial of Number is : %d\n", iRet);
+
+    return 0;
+}
