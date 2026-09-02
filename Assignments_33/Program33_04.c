@@ -1,0 +1,54 @@
+/* 
+    4. Write a program which accept one number from user and toggle 7th and 10th bit of that number. Return modified number.
+
+    Input  : 137
+    Output : 713
+    
+*/
+
+#include<stdio.h>
+
+typedef unsigned int UINT;
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name  : ToggleBit
+//  Description    : This function toggles the 7th and 10th bits of the given number.
+//  Input          : Integer
+//  Output         : Returns modified number after toggling 7th and 10th bits
+//  Author         : Gavade Somanath Vilas
+//  Date           : 19/04/2026
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+int ToggleBit(UINT iNo)
+{
+    int iMask = 0x240;
+    int iResult = 0;
+
+    iResult = iNo ^ iMask;
+
+    return iResult;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Application Name : Toggle 7th and 10th Bit Program
+//  Description      : This application accepts a number from the user and toggles its 7th and 10th bits.
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0;
+    int iRet = 0;
+
+    printf("Enter a Number : \n");
+    scanf("%d", &iValue);
+
+    iRet = ToggleBit(iValue);
+
+    printf("Number after toggling 7th and 10th bits is : %d\n", iRet);
+
+    return 0;
+}
